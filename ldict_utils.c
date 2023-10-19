@@ -70,10 +70,10 @@ float *compare_freq (struct S_ldict* letter_dict, size_t dict_size)
     delta_arr[1] += letter_dict[i].frequency - freq_french[index];
     delta_arr[2] += letter_dict[i].frequency - freq_german[index];
     delta_arr[3] += letter_dict[i].frequency - freq_spanish[index];
-    __builtin_printf("dif EN %f - %f = %f\n", letter_dict[i].frequency, freq_english[index], delta_arr[0]);
-    __builtin_printf("dif FR %f - %f = %f\n", letter_dict[i].frequency, freq_french[index], delta_arr[1]);
-    __builtin_printf("dif GR %f - %f = %f\n", letter_dict[i].frequency, freq_german[index], delta_arr[2]);
-    __builtin_printf("dif ES %f - %f = %f\n", letter_dict[i].frequency, freq_spanish[index], delta_arr[3]);
+    // __builtin_printf("dif EN %f - %f = %f\n", letter_dict[i].frequency, freq_english[index], delta_arr[0]);
+    // __builtin_printf("dif FR %f - %f = %f\n", letter_dict[i].frequency, freq_french[index], delta_arr[1]);
+    // __builtin_printf("dif GR %f - %f = %f\n", letter_dict[i].frequency, freq_german[index], delta_arr[2]);
+    // __builtin_printf("dif ES %f - %f = %f\n", letter_dict[i].frequency, freq_spanish[index], delta_arr[3]);
     i++;
   }
   return (delta_arr);
