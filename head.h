@@ -21,7 +21,7 @@ void calc_freq(struct S_ldict* letter_dict, size_t texts, size_t dict_size);
 void print_dict(struct S_ldict* letter_dict, size_t dict_size);
 void ft_putfloat(float f);
 void fill_freq_dict(struct S_freq_dict* ptr);
-float *compare_freq (struct S_ldict* letter_dict, size_t dict_size);
+float *compare_freq (struct S_ldict* letter_dict, size_t dict_size, float *delta_arr);
 char *find_lang(float *delta_arr);
 
 #endif

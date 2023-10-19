@@ -11,6 +11,8 @@ int main(int ac, char *av[])
   size_t j;
   struct S_ldict *letter_dict;
 
+  delta_arr = (float *) malloc(5 * sizeof(float));
+  delta_arr = (float[4]){0.0f, 0.0f, 0.0f, 0.0f};
   letter_dict = (struct S_ldict*) malloc((ac - 2) * sizeof(struct S_ldict));
   dict_size = fill_dict(av, letter_dict);
   texts = 0;
@@ -29,7 +31,7 @@ int main(int ac, char *av[])
 
   calc_freq(letter_dict, texts, dict_size);
   print_dict(letter_dict, dict_size);
-  delta_arr = compare_freq(letter_dict, dict_size);
+  compare_freq(letter_dict, dict_size, delta_arr);
   ft_putstr("==> ", find_lang(delta_arr));
   return(EXIT_SUCCESS);
 }

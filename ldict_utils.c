@@ -54,15 +54,12 @@ void print_dict(struct S_ldict* letter_dict, size_t dict_size)
   }
 }
 
-float *compare_freq (struct S_ldict* letter_dict, size_t dict_size)
+float *compare_freq (struct S_ldict* letter_dict, size_t dict_size, float *delta_arr)
 {
   size_t i;
   int index;
-  float *delta_arr;
 
   i = 0;
-  delta_arr = (float *) malloc(4 * sizeof(float));
-  delta_arr = (float[4]){0.0f, 0.0f, 0.0f, 0.0f};
   while (i < dict_size)
   {
     index = (char) letter_dict[i].letter - 'a';
